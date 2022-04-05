@@ -1,0 +1,20 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities: Icomoon
+ *
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin icomoon {
+  font-family: 'icomoon' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: center;
+  text-transform: none;
+  white-space: nowrap;
+  speak: none;
+}

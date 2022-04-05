@@ -1,0 +1,21 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Tables: Striped
+ *
+ * ----------------------------------------------------------------------------- */
+
+.table-striped tbody tr:nth-child( odd ) th {
+  background-color: var( --color-white );
+}
+
+.table-striped tbody tr:nth-child( even ) th {
+  background-color: var( --color-neutral-light );
+}
+
+.table-striped tbody tr:nth-child( odd ) td {
+  background-color: var( --color-white );
+}
+
+.table-striped tbody tr:nth-child( even ) td {
+  background-color: var( --color-neutral-light );
+}

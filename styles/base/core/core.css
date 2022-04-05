@@ -1,0 +1,43 @@
+/* -----------------------------------------------------------------------------
+  *
+  * Core
+	*
+	* These are styles of the main website elements - body, input, button, ul, ol, etc.
+	* In this section, we use mainly HTML tags and attribute selectors, in exceptional cases - classes
+	* (for example, if you have JavaScript-style selections);
+  *
+  * ----------------------------------------------------------------------------- */
+
+html {
+  scroll-padding-top: 53px;
+}
+
+body {
+  color: var( --color-midnight-express );
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body.browser-ready {
+  font-family: var( --font-primary );
+}
+
+/* .preampjs [ data-preamp ],
+.preampjs [ data-preamp-placement ],
+.fusejs [ data-fuse ] {
+  opacity: 0;
+} */
+
+body[ data-cloaked='true' ] {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+body[ data-cloaked='false' ] {
+  opacity: 1;
+}
+
+.grecaptcha-badge {
+  display: none;
+}

@@ -1,0 +1,107 @@
+/* -----------------------------------------------------------------------------
+ * Paging Navigation.
+ * ----------------------------------------------------------------------------- */
+
+.paging-navigation {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  clear: both;
+  border-top: 2px solid map-get( $paging, border-top );
+  border-bottom: 2px solid map-get( $paging, border-bottom );
+}
+
+.paging-navigation .nav-links {
+  display: table;
+  width: 100%;
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.paging-navigation .page-numbers {
+  display: inline-block;
+  min-width: 32px;
+  color: map-get( $paging, number-color );
+  font-size: rem( 14px );
+  line-height: lh( 14px, 32px );
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.paging-navigation .page-numbers:hover,
+.paging-navigation .page-numbers:focus {
+  color: map-get( $paging, number-color-hover );
+}
+
+.paging-navigation .previous,
+.paging-navigation .next {
+  min-width: auto;
+  font-size: 0;
+}
+
+.paging-navigation .previous {
+  margin-right: 8px;
+  float: left;
+}
+
+.paging-navigation .next {
+  margin-left: 8px;
+  float: right;
+}
+
+.paging-navigation .previous::before,
+.paging-navigation .next::after {
+  display: inline-block;
+  color: map-get( $paging, number-previous-next-color );
+  font-family: 'icomoon' !important;
+  font-size: rem( 16px );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+
+  /* line-height: 1; */
+  letter-spacing: 0;
+  line-height: lh( 16px, 32px );
+  text-align: center;
+  text-transform: none;
+  vertical-align: top;
+  speak: none;
+}
+
+.paging-navigation .previous::before {
+  content: map-get( $paging, previous-icon );
+  margin-right: 8px;
+}
+
+.paging-navigation .next::after {
+  content: map-get( $paging, next-icon );
+  margin-left: 8px;
+}
+
+.paging-navigation .previous:hover,
+.paging-navigation .previous:focus,
+.paging-navigation .next:hover,
+.paging-navigation .next:focus {
+}
+
+.paging-navigation .previous:hover::before,
+.paging-navigation .previous:focus::before,
+.paging-navigation .next:hover::after,
+.paging-navigation .next:focus::after {
+  color: map-get( $paging, previous-next-icon-hover );
+}
+
+.paging-navigation .current,
+.paging-navigation .current:hover,
+.paging-navigation .current:focus {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px map-get( $paging, current-number-background );
+  color: map-get( $paging, current-number-color );
+  font-weight: bolder;
+}

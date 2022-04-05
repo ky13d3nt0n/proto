@@ -1,0 +1,145 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Content: Archive
+ *
+ * ----------------------------------------------------------------------------- */
+
+.archive-content-area {
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Archive Entry
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry {
+  margin-bottom: 32px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #ccc;
+
+  &:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.archive-entry .entry-col-1 {
+}
+
+.archive-entry .entry-col-2 {
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry Thumbnail
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .entry-thumbnail {
+  display: block;
+  margin-bottom: 20px;
+
+  @media (--medium) {
+    margin-bottom: 0;
+  }
+}
+
+.archive-entry .entry-thumbnail img {
+  width: 100%;
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry Header
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .entry-header {
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry Title
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .entry-title {
+  margin-top: 0;
+}
+
+.archive-entry .entry-title a {
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry Meta
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .entry-meta {
+}
+
+.archive-entry .entry-meta a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+  }
+}
+
+.archive-entry .entry-meta > :not( :first-child )::before {
+  content: '\2f\20';
+}
+
+.archive-entry .entry-meta .date {
+}
+
+.archive-entry .entry-meta .month {
+}
+
+.archive-entry .entry-meta .day {
+}
+
+.archive-entry .entry-meta .comma {
+}
+
+.archive-entry .entry-meta .year {
+}
+
+.archive-entry .entry-meta .author {
+}
+
+.archive-entry .entry-meta .categories-links {
+}
+
+.archive-entry .entry-meta .tags-links {
+}
+
+.archive-entry .entry-meta .comments-popup-link {
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry Summary
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .entry-summary {
+}
+
+.archive-entry .entry-summary p {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry More Link
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .more-link {
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Entry Footer
+ * ----------------------------------------------------------------------------- */
+
+.archive-entry .entry-footer {
+}

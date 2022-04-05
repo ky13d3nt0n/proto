@@ -1,0 +1,49 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Mixins: Backgrounds
+ *
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin background {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  @media (--medium) {
+    display: block;
+    width: 50vw;
+  }
+
+  /* @media (--hd) {
+    max-width: 100%;
+  } */
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@define-mixin backgroundLeft {
+  @mixin background;
+
+  @media (--medium) {
+    position: absolute;
+    right: var( --grid-gutter );
+  }
+}
+
+@define-mixin backgroundMobile {
+  display: block;
+  width: 100%;
+  height: 230px;
+
+  @media (--small) {
+    height: 414px;
+  }
+
+  @media (--medium) {
+    display: none;
+  }
+}

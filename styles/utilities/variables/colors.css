@@ -1,0 +1,40 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Variables: Colors
+ *
+ * ----------------------------------------------------------------------------- */
+
+:root {
+  /* Black & White */
+  --color-white: rgb( 255, 255, 255 );
+  --color-black: rgb( 0, 0, 0 );
+
+  /* Neutral */
+  --color-neutral-light: rgb( 235, 236, 240 );
+  --color-neutral-medium: rgb( 126, 126, 126 );
+  --color-neutral-dark: rgb( 38, 38, 38 );
+
+  /* Rebrand Colors */
+  --color-torch-red: rgb( 255, 0, 55 );              /* #FF0037 */
+  --color-electric-blue: rgb( 150, 255, 245 );      /* #96FFF5 */
+  --color-midnight-express: rgb( 20, 25, 40 );      /* #141928 */
+  --color-black-rock: rgb( 44, 48, 62 );            /* #2C303E */
+  --color-shuttle-gray: rgb( 91, 94, 105 );         /* #5B5E69 */
+  --color-aluminium-gray: rgb( 137, 140, 147 );     /* #898C93 */
+  --color-ghost-gray: rgb( 196, 197, 201 );         /* #C4C5C9 */
+  --color-zircon: rgb( 243, 244, 244 );             /* #F3F4F4 */
+
+  /* Theme Colors */
+  --color-primary: rgb( 255, 0, 55 );  /* Torch Red */
+  --color-secondary: rgb( 20, 25, 40 ); /* Midnight Express */
+  --color-tertiary: rgb( 150, 255, 245 ); /* Electric Blue */
+
+  /* Background Colors */
+  --background-light: rgb( 255, 255, 255 );
+  --background-dark: rgb( 38, 38, 38 );
+
+  /* Why Fiber Background Image Colors */
+  --color-bunker: rgb( 10, 15, 17 );                   /* #0A0F11 */
+  --color-timber-green: rgb( 22, 40, 46 );             /* #16282E */
+  --color-ebony: rgb( 9, 13, 27 );                     /* #090d1B */
+}

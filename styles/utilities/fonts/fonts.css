@@ -1,0 +1,98 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities: Fonts
+ *
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Nexa
+ * ----------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Nexa';
+  font-style: normal;
+  font-weight: 400;
+  src: url( '/fonts/nexa/nexa-book.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  font-style: normal;
+  font-weight: 500;
+  src: url( '/fonts/nexa/nexa-bold.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  font-style: normal;
+  font-weight: 700;
+  src: url( '/fonts/nexa/nexa-heavy.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  font-style: normal;
+  font-weight: 900;
+  src: url( '/fonts/nexa/nexa-black.ttf' );
+  font-display: swap;
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Avenir
+ * ----------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: normal;
+  src: url( '/fonts/avenir/avenir-next-condensed.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: bold;
+  src: url( '/fonts/avenir/avenir-black.ttf' );
+  font-display: swap;
+}
+
+/* -----------------------------------------------------------------------------
+ * FrGuide
+ * ----------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'FrGuide';
+  font-style: normal;
+  font-weight: 400;
+  src: url( '/fonts/fr-guide/FrGuide-Book.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FrGuide';
+  font-style: normal;
+  font-weight: 500;
+  src: url( '/fonts/fr-guide/FrGuide-Heavy.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FrGuide';
+  font-style: normal;
+  font-weight: 700;
+  src: url( '/fonts/fr-guide/FrGuide-Bold.ttf' );
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FrGuide';
+  font-style: normal;
+  font-weight: 900;
+  src: url( '/fonts/fr-guide/FrGuide-Black.ttf' );
+  font-display: swap;
+}

@@ -1,0 +1,29 @@
+/* -----------------------------------------------------------------------------
+ *
+ * List: Unordered
+ *
+ * ----------------------------------------------------------------------------- */
+
+.list-unordered {
+  ul&,
+  & > ul {
+    list-style: none;
+
+    & > li,
+    & > ul > li {
+      position: relative;
+
+      &::before {
+        @mixin icomoon;
+
+        content: var( --icon-checkmark1 );
+        position: absolute;
+        right: 100%;
+        margin-right: 4px;
+        color: var( --color-primary );
+        font-size: rem( 12px );
+        line-height: 2;
+      }
+    }
+  }
+}

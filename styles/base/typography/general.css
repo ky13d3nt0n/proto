@@ -1,0 +1,133 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Typography: General
+ *
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * Typography: Paragraphs
+ * ----------------------------------------------------------------------------- */
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography: Lead
+ * ----------------------------------------------------------------------------- */
+
+.lead {
+  font-size: var( --lead-font-size );
+  line-height: var( --lead-line-height );
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography: Dropcap
+ * ----------------------------------------------------------------------------- */
+
+.dropcap {
+  margin-right: 8px;
+  float: left;
+  color: var( --color-primary );
+  font-size: rem( 48px );
+  line-height: 1;
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography: Address
+ * ----------------------------------------------------------------------------- */
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography: Blockquote
+ * ----------------------------------------------------------------------------- */
+
+blockquote {
+  margin: 0 0 20px 0;
+  padding: 8px 0 8px 28px;
+  border-left: 4px solid var( --color-primary );
+
+  @media (--small) {
+    margin-left: 32px;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography: Code
+ * ----------------------------------------------------------------------------- */
+
+code {
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: var( --color-neutral-light );
+  color: var( --color-neutral-dark );
+}
+
+kbd {
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: var( --color-neutral-light );
+  color: var( --color-neutral-dark );
+
+  & kbd {
+    padding: 0;
+    box-shadow: none;
+    font-weight: bolder;
+  }
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 15px 15px 15px 16px;
+  overflow: auto;
+  border-width: 1px 1px 1px 4px;
+  border-style: solid;
+  border-color: var( --color-neutral-medium ) var( --color-neutral-medium ) var( --color-neutral-medium ) var( --color-primary );
+  background-color: var( --color-neutral-light );
+  color: var( --color-neutral-dark );
+  word-wrap: break-word;
+  word-break: break-all;
+
+  & code {
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography: Horizontal Rule
+ * ----------------------------------------------------------------------------- */
+
+hr,
+.hr {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  color: inherit;
+  font-size: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: -1px;
+    height: 1px;
+    background-color: var( --color-neutral-light );
+  }
+}

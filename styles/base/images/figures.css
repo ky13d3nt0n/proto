@@ -1,0 +1,28 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Images: Figures
+ *
+ * ----------------------------------------------------------------------------- */
+
+.figure,
+.img-caption {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  & img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.figure-caption,
+.img-caption-text {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: rem( 14px );
+  line-height: lh( 14px, 20px );
+  text-align: center;
+  hyphens: auto;
+}

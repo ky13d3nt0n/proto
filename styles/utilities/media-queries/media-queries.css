@@ -1,0 +1,23 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities: Media Queries
+ *
+ * ----------------------------------------------------------------------------- */
+@custom-media --xsmall( min-width: 320px );
+@custom-media --small ( min-width: 576px );
+@custom-media --medium ( min-width: 768px );
+@custom-media --full ( min-width: 960px );
+@custom-media --large ( min-width: 1024px );
+@custom-media --xlarge ( min-width: 1280px );
+@custom-media --hd ( min-width: 1440px );
+
+@custom-media --xsmall-max ( max-width: 319px );
+@custom-media --small-max ( max-width: 575px );
+@custom-media --medium-max ( max-width: 767px );
+@custom-media --full-max ( max-width: 959px );
+@custom-media --large-max ( max-width: 1023.98px );
+@custom-media --xlarge-max ( max-width: 1279px );
+@custom-media --hd-max ( max-width: 1439px );
+
+/* Admin */
+@custom-media --wpadmin ( min-width: 783px );

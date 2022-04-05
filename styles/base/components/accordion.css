@@ -1,0 +1,155 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Components: Accordion
+ *
+ * ----------------------------------------------------------------------------- */
+
+.accordion {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  padding-top: 1px;
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Accordion Item
+ * ----------------------------------------------------------------------------- */
+
+.accordion .accordion-item {
+  position: relative;
+  cursor: pointer;
+
+  &:first-of-type {
+    .accordion-header {
+
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var( --color-ghost-gray );
+  }
+
+  &:last-of-type {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var( --color-ghost-gray );
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Accordion Header
+ * ----------------------------------------------------------------------------- */
+
+.accordion-header {
+  display: block;
+  width: 100%;
+  padding: 30px 15px 30px 0;
+  border: 0;
+  background-color: var( --color-white );
+  color: var( --color-midnight-express );
+  text-align: left;
+  pointer-events: none;
+  appearance: none;
+
+  &:hover {
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .accordion-item.--active & {
+    padding-bottom: 0;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Accordion Title
+ * ----------------------------------------------------------------------------- */
+
+.accordion-title {
+  position: relative;
+  margin: 0;
+  padding: 0 32px 0 0;
+  font-size: rem( 16px );
+  font-weight: 400;
+  line-height: lh( 16px, 22px );
+  pointer-events: none;
+
+  @media (--large) {
+    font-size: rem( 22px );
+    line-height: lh( 22px, 27px );
+  }
+
+  &::after {
+    @mixin icomoon;
+
+    content: var( --icon-plus );
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var( --color-ghost-gray );
+    font-size: rem( 20px );
+    letter-spacing: 0;
+    line-height: lh( 16px, 24px );
+
+    @media (--medium) {
+      font-size: rem( 22px );
+      line-height: 1;
+    }
+  }
+
+  .accordion-header:focus & {
+    @mixin outline;
+  }
+
+  .accordion-item.--active & {
+    &::after {
+      content: var( --icon-minus );
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Accordion Content
+ * ----------------------------------------------------------------------------- */
+
+.accordion-content {
+  max-height: 0;
+  transition-property: all;
+  transition-duration: 0s;
+  opacity: 0;
+  color: var( --color-midnight-express );
+
+  p {
+    margin-bottom: -1px;
+
+    .accordion-item.--active & {
+      padding-top: 16px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &[ aria-expanded='true' ] {
+    transition-duration: 0.1s;
+  }
+}
+
+.accordion-item.--active .accordion-content {
+  visibility: visible;
+}

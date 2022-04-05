@@ -1,0 +1,23 @@
+/* -----------------------------------------------------------------------------
+ *
+ * List: Inline
+ *
+ * ----------------------------------------------------------------------------- */
+
+.list-inline {
+  ul&,
+  ol&,
+  & > ul,
+  & > ol {
+    margin-left: -4px;
+    padding-left: 0;
+    list-style: none;
+
+    & > li {
+      display: inline-block;
+      margin-bottom: 0;
+      padding-right: 4px;
+      padding-left: 4px;
+    }
+  }
+}

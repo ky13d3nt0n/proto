@@ -1,0 +1,38 @@
+/* -----------------------------------------------------------------------------
+ * Anchor Offset
+ * ----------------------------------------------------------------------------- */
+
+.anchor-offset {
+  content: '';
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  outline: none;
+  font-size: 0;
+  line-height: 0;
+
+  @media (--large) {
+    .anchor-offset {
+      content: '';
+      display: block;
+      height: 92px;
+      margin-top: -92px;
+      outline: none;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+}
+
+.anchor-offset-large {
+
+  @media (--large) {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+    outline: none;
+    font-size: 0;
+    line-height: 0;
+  }
+}

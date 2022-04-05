@@ -1,0 +1,67 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Components: Social
+ *
+ * ----------------------------------------------------------------------------- */
+
+.social {
+  display: table;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.social-title {
+  display: table-cell;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-right: 16px;
+  font-size: rem( 16px );
+  font-weight: bolder;
+  line-height: lh( 16px, 20px );
+  vertical-align: middle;
+}
+
+/* -----------------------------------------------------------------------------
+* Social Menu
+* ----------------------------------------------------------------------------- */
+
+.social-menu {
+  display: table;
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0;
+}
+
+ul.social-menu > li {
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var( --color-midnight-express );
+  color: var( --color-white );
+}
+
+.social-menu li:last-child {
+  margin-right: 0;
+}
+
+.social-menu a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+}
+
+.social-menu a::before {
+  position: relative;
+  top: -1px;
+  color: var( --color-white );
+  font-size: rem( 12px );
+  line-height: 1;
+}
+
+.social-menu a:hover::before {
+
+}
+
+.social-menu a:hover,
+.social-menu a:focus {
+}

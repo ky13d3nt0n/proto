@@ -1,0 +1,72 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Components: Panels
+ *
+ * ----------------------------------------------------------------------------- */
+
+.panel {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Panel Header
+ * ----------------------------------------------------------------------------- */
+
+.panel-header {
+  position: relative;
+
+  & + .panel-body {
+    margin-top: -1px;
+    padding-top: 28px;
+  }
+
+  .panel-body + .panel-footer {
+    margin-top: -1px;
+    padding-top: 8px;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Panel Title
+ * ----------------------------------------------------------------------------- */
+
+.panel-title {
+  margin-bottom: 0;
+  padding: 11px 15px;
+  border: 1px solid var( --color-primary );
+  background-color: var( --color-primary );
+  color: var( --color-white );
+  font-size: rem( 16px );
+  font-weight: bolder;
+  line-height: lh( 16px, 24px );
+}
+
+/* -----------------------------------------------------------------------------
+ * Panel Body
+ * ----------------------------------------------------------------------------- */
+
+.panel-body {
+  padding: 27px 15px;
+  border: 1px solid var( --color-neutral-light );
+  background-color: var( --color-white );
+}
+
+/* -----------------------------------------------------------------------------
+ * Panel Content
+ * ----------------------------------------------------------------------------- */
+
+.panel-content {
+}
+
+/* -----------------------------------------------------------------------------
+ * Panel Footer
+ * ----------------------------------------------------------------------------- */
+
+.panel-footer {
+  padding: 7px 15px;
+  border: 1px solid var( --color-neutral-light );
+  background-color: var( --color-neutral-light );
+  font-size: rem( 14px );
+  line-height: lh( 14px, 24px );
+}

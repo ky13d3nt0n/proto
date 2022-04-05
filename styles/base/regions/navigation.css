@@ -1,0 +1,525 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Regions: Navigation
+ *
+ * ----------------------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------------------------
+ * Navigation Collapse
+ * ----------------------------------------------------------------------------- */
+
+.navigation-collapse {
+  @media (--medium-max) {
+    visibility: hidden;
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+    height: 100vh;
+    transform: translateX( -100% );
+    transition: all 0.3s ease;
+    background-color: var( --color-white );
+  }
+
+  @media (--medium) {
+    width: 100%;
+  }
+
+  &.navigation-open {
+    @media (--medium-max) {
+      visibility: visible;
+      transform: translateX( 0% );
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Navigation Area
+ * ----------------------------------------------------------------------------- */
+
+.navigation-area {
+  @media (--medium) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+
+  @media (--large) {
+    margin-left: 50px;
+  }
+
+  @media (--hd) {
+    margin-left: 100px;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Navigation Area Login
+ * ----------------------------------------------------------------------------- */
+
+.navigation-area-login {
+  background-color: var( --color-zircon );
+  @media (--medium) {
+    display: none;
+  }
+}
+
+.navigation-area-login a {
+  display: block;
+  padding: 20px 30px;
+  color: var( --color-midnight-express );
+  font-size: rem( 14px );
+  font-weight: 500;
+  line-height: lh( 14px, 24px );
+
+  .icon {
+    margin-right: 6px;
+    color: var( --color-torch-red );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Navigation Area Search
+ * ----------------------------------------------------------------------------- */
+
+.navigation-area-search {
+  padding: 20px 30px;
+
+  @media (--medium) {
+    display: none;
+  }
+}
+
+.yext-search-container {
+  position: relative;
+  z-index: 9999;
+  max-width: 260px;
+}
+
+.yext-search-container.component,
+.yext-search-container .component {
+  padding: 0;
+}
+
+.yext-search-container .yxt-SearchBar-button {
+  line-height: 0.5;
+}
+
+/* -----------------------------------------------------------------------------
+ * Navigation Area Primary
+ * ----------------------------------------------------------------------------- */
+
+.navigation-area-primary {
+
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Menu
+ * ----------------------------------------------------------------------------- */
+
+.site-menu {
+  position: relative;
+}
+
+.site-menu > li {
+
+  @media (--medium) {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.site-menu > li.menu-item-has-children {
+}
+
+.site-menu > li.menu-item-has-children:hover > .submenu-wrap,
+.site-menu > li.menu-item-has-children:focus > .submenu-wrap {
+
+  @media (--medium) {
+    display: block;
+  }
+}
+
+.site-menu > li > button,
+.site-menu > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 20px 30px;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: var( --color-midnight-express );
+  font-size: rem( 24px );
+  font-weight: 500;
+  line-height: lh( 24px, 28px );
+  text-align: left;
+
+  @media (--medium) {
+    padding: 12px;
+    font-size: rem( 18px );
+    line-height: lh( 18px, 20px );
+  }
+
+  @media (--hd) {
+    padding: 15px;
+    font-size: rem( 22px );
+    line-height: lh( 22px, 26px );
+  }
+}
+
+.site-menu > li > button:hover,
+.site-menu > li > button:focus,
+.site-menu > li > a:hover,
+.site-menu > li > a:focus {
+  background-color: transparent;
+  color: var( --color-midnight-express );
+  text-decoration: none;
+
+  &::after {
+    color: var( --color-midnight-express );
+  }
+}
+
+.site-menu > li.menu-item-has-children > button::after {
+  @mixin icomoon;
+
+  content: var( --icon-chevron-right );
+  margin-left: 8px;
+  color: var( --color-midnight-express );
+
+  @media (--medium) {
+    content: var( --icon-chevron-down );
+    margin-left: 4px;
+    font-size: rem( 20px );
+  }
+}
+
+.site-menu > li > button.--hidden,
+.site-menu > li > a.--hidden {
+  display: none;
+
+  @media (--medium) {
+    display: flex;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+ * Menu Item Tag
+ * ----------------------------------------------------------------------------- */
+
+.site-menu > li.menu-item-tag {
+  position: relative;
+}
+
+.site-menu > li.menu-item-tag a {
+  color: var( --color-torch-red );
+}
+
+.site-menu > li.menu-item--active ~ .menu-item-tag {
+
+  @media (--medium-max) {
+    display: none;
+  }
+}
+
+.site-menu > li.menu-item-tag a::after {
+  content: attr( data-tag );
+  position: relative;
+  padding: 3px 5px;
+  border: 2px solid var( --color-torch-red );
+  border-radius: 12px;
+  color: var( --color-torch-red );
+  font-size: rem( 12px );
+  line-height: 1;
+
+  @media (--medium) {
+    position: absolute;
+    top: -4px;
+    right: -26px;
+  }
+}
+
+.site-menu > li.menu-item-tag a:hover,
+.site-menu > li.menu-item-tag a:focus {
+  color: var( --color-midnight-express );
+
+  &::after {
+    transition: all 0.3s ease;
+    border-color: var( --color-midnight-express );
+    color: var( --color-midnight-express );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Menu Reset Button
+ * ----------------------------------------------------------------------------- */
+
+.site-menu__reset {
+  display: none;
+  width: 100%;
+  padding: 20px 30px;
+  border: 0;
+  border-bottom: 1px solid var( --color-ghost-gray );
+  background-color: transparent;
+  color: var( --color-midnight-express );
+  font-size: rem( 14px );
+  line-height: 1;
+  text-align: left;
+  cursor: pointer;
+
+  @media (--medium) {
+    display: none;
+  }
+}
+
+.site-menu__reset.--visible {
+  display: block;
+
+  @media (--medium) {
+    display: none;
+  }
+}
+
+.site-menu__reset .icon {
+  color: var( --color-midnight-express );
+}
+
+/* -----------------------------------------------------------------------------
+ * Submenu - Tier Two
+ * ----------------------------------------------------------------------------- */
+.site-menu .submenu-wrap {
+  visibility: hidden;
+  position: absolute;
+  z-index: 9000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX( -100% );
+  transition: transform 0.3s ease;
+  border: 1px solid var( --color-ghost-gray );
+  opacity: 0;
+  background-color: var( --color-white );
+
+  @media (--medium) {
+    display: none;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: 50%;
+    width: auto;
+    min-width: 180px;
+    height: auto;
+    transform: translateX( -50% );
+    transition: none;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px color-mod( var( --color-black ) a( 18% ) );
+  }
+}
+
+.site-menu .submenu-wrap.--active {
+  visibility: visible;
+  transform: translateX( 0% );
+  opacity: 1;
+
+  @media (--medium) {
+    display: block;
+    transform: translateX( -50% );
+  }
+}
+
+.site-menu .submenu-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 30px;
+  color: var( --color-midnight-express );
+  font-size: rem( 24px );
+  font-weight: 500;
+  line-height: 1;
+
+  @media (--medium) {
+    display: none;
+  }
+}
+
+.site-menu .submenu {
+  position: relative;
+  background-color: var( --color-white );
+
+  @media (--medium) {
+    text-align: center;
+  }
+}
+
+.site-menu .submenu::before {
+  content: none;
+  position: absolute;
+  z-index: -1;
+  top: -9px;
+  left: calc( 50% - 9px );
+  width: 18px;
+  height: 18px;
+  transform: rotate( 45deg );
+  border: 1px solid var( --color-ghost-gray );
+  background-color: var( --color-white );
+
+  @media (--medium) {
+    content: '';
+  }
+}
+
+.site-menu .submenu li {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.site-menu .submenu a {
+  display: block;
+  width: 100%;
+  padding: 10px 20px 10px 30px;
+
+  @media (--medium) {
+    padding: 10px 30px;
+    font-weight: 500;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var( --color-zircon );
+    text-decoration: none;
+
+    @media (--medium) {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-menu .submenu li:first-of-type a {
+  @media (--medium) {
+    padding-top: 20px;
+  }
+}
+
+.site-menu .submenu li:last-of-type a {
+  @media (--medium) {
+    padding-bottom: 20px;
+  }
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Navigation Area Secondary
+ * ----------------------------------------------------------------------------- */
+
+.navigation-area-secondary {
+  display: none;
+  margin-right: -15px;
+
+  @media (--medium) {
+    display: block;
+  }
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Header Menu
+ * ----------------------------------------------------------------------------- */
+
+.header-menu {
+
+}
+
+.header-menu li {
+  display: inline-block;
+  font-size: rem( 16px );
+  font-weight: 500;
+  line-height: lh( 16px, 20px );
+}
+
+.header-menu li button {
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  font-size: rem( 16px );
+  font-weight: 500;
+  line-height: lh( 16px, 20px );
+}
+
+.header-menu a,
+.header-menu button {
+  padding: 15px;
+  color: var( --color-midnight-express );
+
+  &:hover,
+  &:focus {
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .icon {
+    color: var( --color-torch-red );
+
+    @media (--large) {
+      margin-right: 6px;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Navigation Area Tertiary
+ * ----------------------------------------------------------------------------- */
+
+.navigation-area-tertiary {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 60px;
+  border-top: 1px solid var( --color-ghost-gray );
+
+  @media (--medium) {
+    display: none;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Complementary Menu
+ * ----------------------------------------------------------------------------- */
+
+.complementary-menu {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 20px;
+}
+
+.complementary-menu > li {
+  width: 50%;
+  font-size: rem( 14px );
+}
+
+.complementary-menu > li > a {
+  display: block;
+  padding: 10px;
+  color: var( --color-ghost-gray );
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: var( --color-midnight-express );
+    text-decoration: none;
+  }
+}
+
+.complementary-menu > li.--active > a {
+  color: var( --color-midnight-express );
+}

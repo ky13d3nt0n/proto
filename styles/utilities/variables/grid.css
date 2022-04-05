@@ -1,0 +1,39 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Variables: Grid
+ *
+ * ----------------------------------------------------------------------------- */
+
+:root {
+  /* -----------------------------------------------------------------------------
+	 * Gutters
+	 * ----------------------------------------------------------------------------- */
+
+  --grid-width-default: 332px;
+
+  /* Gutter - Default */
+  --grid-gutter: 20px;
+  --grid-gutter-negative: calc( var( --grid-gutter ) * -1 );
+  --grid-gutter-half: calc( var( --grid-gutter ) / 2 );
+  --grid-gutter-half-negative: calc( var( --grid-gutter-half ) * -1 );
+
+  /* Widths */
+  --grid-width: calc( var( --grid-width-default ) + var( --grid-gutter ) * 2 );
+
+  /* Admin */
+  --admin-bar-height-mobile: 46px;
+  --admin-bar-height-desktop: 32px;
+
+  @media (--medium) {
+    --grid-gutter: 30px;
+    --grid-width-default: 720px;
+  }
+
+  @media (--large) {
+    --grid-width-default: 960px;
+  }
+
+  @media (--hd) {
+    --grid-width-default: 1140px;
+  }
+}

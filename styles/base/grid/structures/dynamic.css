@@ -1,0 +1,143 @@
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 20%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--one-fifth {
+  @media (--medium) {
+    width: 20%;
+  }
+}
+
+.g-col--one-fifth--large {
+  @media (--large) {
+    width: 20%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 25%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--one-fourth {
+  @media (--medium) {
+    width: 25%;
+  }
+}
+
+.g-col--one-fourth--large {
+  @media (--large) {
+    width: 25%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 33%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--one-third {
+  @media (--medium) {
+    width: 33.33%;
+  }
+}
+
+.g-col--one-third--large {
+  @media (--large) {
+    width: 33.33%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 50%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--one-half {
+  @media (--medium) {
+    width: 50%;
+  }
+}
+
+.g-col--one-half--large {
+  @media (--large) {
+    width: 50%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 66%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--two-thirds {
+  @media (--medium) {
+    width: 66.66%;
+  }
+}
+
+.g-col--two-thirds--large {
+  @media (--large) {
+    width: 66.66%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 75%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--three-fourths {
+  @media (--medium) {
+    width: 75%;
+  }
+}
+
+.g-col--three-fourths--large {
+  @media (--large) {
+    width: 75%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 40%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--two-fifths {
+  @media (--medium) {
+    width: 40%;
+  }
+}
+
+.g-col--two-fifths--large {
+  @media (--large) {
+    width: 40%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 60%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--three-fifths {
+  @media (--medium) {
+    width: 60%;
+  }
+}
+
+.g-col--three-fifths--large {
+  @media (--large) {
+    width: 60%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Column: Modifier Column (Keeps column at a fixed width of 85%.)
+ * ----------------------------------------------------------------------------- */
+
+.g-col--four-fifths {
+  @media (--medium) {
+    width: 80%;
+  }
+}
+
+.g-col--four-fifths--large {
+  @media (--large) {
+    width: 80%;
+  }
+}

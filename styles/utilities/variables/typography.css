@@ -1,0 +1,91 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Variables: Typography
+ *
+ * ----------------------------------------------------------------------------- */
+
+:root {
+  /* -----------------------------------------------------------------------------
+	 * Fonts
+	 * ----------------------------------------------------------------------------- */
+  --font-primary: 'Nexa', 'Helvetica', 'Arial', sans-serif;
+  --font-secondary: 'Avenir', 'Arial', sans-serif;
+  --font-tertiary: 'FrGuide', 'Helvetica', 'Arial', sans-serif;
+  --font-icon: 'icomoon';
+
+  /* -----------------------------------------------------------------------------
+	 * Links
+	 * ----------------------------------------------------------------------------- */
+  --link-color: var( --color-secondary );
+  --link-hover-color: var( --color-secondary );
+
+  /* -----------------------------------------------------------------------------
+	 * Headings
+	 * ----------------------------------------------------------------------------- */
+
+  /* h1 */
+  --h1-font-size: rem( 32px );
+  --h1-line-height: lh( 32px, 36px );
+
+  /* h2 */
+  --h2-font-size: rem( 28px );
+  --h2-line-height: lh( 28px, 32px );
+
+  /* h3 */
+  --h3-font-size: rem( 24px );
+  --h3-line-height: lh( 24px, 28px );
+
+  /* h4 */
+  --h4-font-size: rem( 22px );
+  --h4-line-height: lh( 22px, 24px );
+
+  /* h5 */
+  --h5-font-size: rem( 20px );
+  --h5-line-height: lh( 20px, 24px );
+
+  /* h6 */
+  --h6-font-size: rem( 18px );
+  --h6-line-height: lh( 18px, 20px );
+
+  /* -----------------------------------------------------------------------------
+	 * General Typography
+	 * ----------------------------------------------------------------------------- */
+  --lead-font-size: rem( 20px );
+  --lead-line-height: lh( 20px, 32px );
+
+  @media (--large) {
+    /* -----------------------------------------------------------------------------
+		 * Headings
+		 * ----------------------------------------------------------------------------- */
+
+    /* h1 */
+    --h1-font-size: rem( 44px );
+    --h1-line-height: lh( 44px, 48px );
+
+    /* h2 */
+    --h2-font-size: rem( 32px );
+    --h2-line-height: lh( 32px, 36px );
+
+    /* h3 */
+    --h3-font-size: rem( 28px );
+    --h3-line-height: lh( 28px, 32px );
+
+    /* h4 */
+    --h4-font-size: rem( 24px );
+    --h4-line-height: lh( 24px, 28px );
+
+    /* h5 */
+    --h5-font-size: rem( 22px );
+    --h5-line-height: lh( 22px, 24px );
+
+    /* h6 */
+    --h6-font-size: rem( 20px );
+    --h6-line-height: lh( 20px, 24px );
+
+    /* -----------------------------------------------------------------------------
+		 * General Typography
+		 * ----------------------------------------------------------------------------- */
+    --lead-font-size: rem( 24px );
+    --lead-line-height: lh( 24px, 36px );
+  }
+}

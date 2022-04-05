@@ -1,0 +1,19 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities: Utilities
+ *
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@define-mixin outline {
+  /* outline: 2px solid var( --color-primary );
+  outline-offset: 4px;
+  outline-style: dashed; */
+}

@@ -1,0 +1,29 @@
+/* -----------------------------------------------------------------------------
+ *
+ * List: Ordered
+ *
+ * ----------------------------------------------------------------------------- */
+
+.list-ordered {
+  ol&,
+  & > ol {
+    list-style: none;
+    counter-reset: li;
+
+    & > li,
+    & > ol > li {
+      position: relative;
+
+      &::before {
+        content: counter( li ) '.';
+        position: absolute;
+        right: 100%;
+        margin-right: 4px;
+        color: var( --primary-color );
+        text-align: right;
+        white-space: nowrap;
+        counter-increment: li;
+      }
+    }
+  }
+}

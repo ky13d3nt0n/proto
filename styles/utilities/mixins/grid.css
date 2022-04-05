@@ -1,0 +1,21 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities: Grid
+ *
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin grid-column-reset {
+  width: 100%;
+}
+
+@define-mixin mobile-container {
+  max-width: var( --grid-width-default );
+  margin: 0 auto;
+  padding-right: var( --grid-gutter );
+  padding-left: var( --grid-gutter );
+
+  @media (--medium) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

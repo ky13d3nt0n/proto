@@ -1,0 +1,15 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Components: Icons
+ *
+ * ----------------------------------------------------------------------------- */
+
+[ class^='icon-' ],
+[ class*=' icon-' ] {
+  @mixin icomoon;
+
+  position: relative;
+  top: 2px;
+  letter-spacing: 0;
+  text-decoration: none;
+}

@@ -1,0 +1,112 @@
+/* -----------------------------------------------------------------------------
+ * Pager Navigation
+ * ----------------------------------------------------------------------------- */
+
+.pager-navigation {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  clear: both;
+  border-top: 2px solid map-get( $pager, border-color-top );
+  border-bottom: 2px solid map-get( $pager, border-color-bottom );
+}
+
+.pager-navigation .nav-links {
+  display: table;
+  width: 100%;
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.pager-navigation .nav-previous,
+.pager-navigation .nav-next,
+.pager-navigation .nav-index {
+  display: inline-block;
+  font-size: rem( 16px );
+  line-height: lh( 16px, 32px );
+  vertical-align: top;
+}
+
+.pager-navigation .nav-previous {
+  margin-right: 8px;
+  float: left;
+}
+
+.pager-navigation .nav-index {
+  margin-right: 4px;
+  margin-left: 4px;
+  font-size: 0;
+}
+
+.pager-navigation .nav-next {
+  margin-left: 8px;
+  float: right;
+}
+
+.pager-navigation .nav-previous a,
+.pager-navigation .nav-next a,
+.pager-navigation .nav-index a {
+  display: block;
+  color: map-get( $pager, text-color );
+  text-decoration: none;
+}
+
+.pager-navigation .nav-previous a::before,
+.pager-navigation .nav-next a::after,
+.pager-navigation .nav-index a::before {
+  display: inline-block;
+  color: map-get( $pager, icon-color );
+  font-family: 'icomoon' !important;
+  font-size: rem( 12px );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+
+  /* line-height: 1; */
+  letter-spacing: 0;
+  line-height: lh( 12px, 32px );
+  text-align: center;
+  text-transform: none;
+  vertical-align: top;
+  speak: none;
+}
+
+.pager-navigation .nav-previous a::before {
+  content: map-get( $pager, previous-icon );
+  margin-right: 8px;
+}
+
+.pager-navigation .nav-index a::before {
+  content: map-get( $pager, index-icon );
+  margin-right: 4px;
+  margin-left: 4px;
+  font-size: rem( 18px );
+}
+
+.pager-navigation .nav-next a::after {
+  content: map-get( $pager, next-icon );
+  margin-left: 8px;
+}
+
+.pager-navigation .nav-previous a:hover,
+.pager-navigation .nav-previous a:focus,
+.pager-navigation .nav-next a:hover,
+.pager-navigation .nav-next a:focus,
+.pager-navigation .nav-index a:hover,
+.pager-navigation .nav-index a:focus {
+  color: map-get( $pager, text-color-hover );
+}
+
+.pager-navigation .nav-previous a:hover::before,
+.pager-navigation .nav-previous a:focus::before,
+.pager-navigation .nav-next a:hover::after,
+.pager-navigation .nav-next a:focus::after,
+.pager-navigation .nav-index a:hover::before,
+.pager-navigation .nav-index a:focus::before {
+  color: map-get( $pager, icon-color-hover );
+}

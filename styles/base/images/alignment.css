@@ -1,0 +1,222 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Images: Alignment
+ *
+ * ----------------------------------------------------------------------------- */
+
+img,
+.figure,
+.img-caption,
+.thumbnail {
+  /* Align Right */
+  &.alignright {
+    margin-bottom: 20px;
+    margin-left: 32px;
+    float: right;
+
+    @media (--small) {
+      &-xs {
+        margin-bottom: 20px;
+        margin-left: 32px;
+        float: right;
+      }
+    }
+
+    @media (--small) and (--medium-max) {
+      &-sm {
+        margin-bottom: 20px;
+        margin-left: 32px;
+        float: right;
+      }
+    }
+
+    @media (--medium) and (--large-max) {
+      &-md {
+        margin-bottom: 20px;
+        margin-left: 32px;
+        float: right;
+      }
+    }
+
+    @media (--large) and (--xlarge-max) {
+      &-lg {
+        margin-bottom: 20px;
+        margin-left: 32px;
+        float: right;
+      }
+    }
+
+    @media (--xlarge) {
+      &-xl {
+        margin-bottom: 20px;
+        margin-left: 32px;
+        float: right;
+      }
+    }
+  }
+
+  /* Align Left */
+  &.alignleft {
+    margin-right: 32px;
+    margin-bottom: 20px;
+    float: left;
+
+    @media (--small) {
+      &-xs {
+        margin-right: 32px;
+        margin-bottom: 20px;
+        float: left;
+      }
+    }
+
+    @media (--small) and (--medium-max) {
+      &-sm {
+        margin-right: 32px;
+        margin-bottom: 20px;
+        float: left;
+      }
+    }
+
+    @media (--medium) and (--large-max) {
+      &-md {
+        margin-right: 32px;
+        margin-bottom: 20px;
+        float: left;
+      }
+    }
+
+    @media (--large) and (--xlarge-max) {
+      &-lg {
+        margin-right: 32px;
+        margin-bottom: 20px;
+        float: left;
+      }
+    }
+
+    @media (--xlarge) {
+      &-xl {
+        margin-right: 32px;
+        margin-bottom: 20px;
+        float: left;
+      }
+    }
+  }
+
+  /* Align Center */
+  &.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    float: none;
+
+    @media (--small) {
+      &-xs {
+        display: block;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        float: none;
+      }
+    }
+
+    @media (--small) and (--medium-max) {
+      &-sm {
+        display: block;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        float: none;
+      }
+    }
+
+    @media (--medium) and (--large-max) {
+      &-md {
+        display: block;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        float: none;
+      }
+    }
+
+    @media (--large) and (--xlarge-max) {
+      &-lg {
+        display: block;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        float: none;
+      }
+    }
+
+    @media (--xlarge) {
+      &-xl {
+        display: block;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        float: none;
+      }
+    }
+  }
+
+  /* Align None */
+  &.alignnone {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    float: none;
+
+    @media (--small) {
+      &-xs {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: none;
+      }
+    }
+
+    @media (--small) and (--medium-max) {
+      &-sm {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: none;
+      }
+    }
+
+    @media (--medium) and (--large-max) {
+      &-md {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: none;
+      }
+    }
+
+    @media (--large) and (--xlarge-max) {
+      &-lg {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: none;
+      }
+    }
+
+    @media (--xlarge) {
+      &-xl {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: none;
+      }
+    }
+  }
+}

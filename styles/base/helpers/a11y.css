@@ -1,0 +1,94 @@
+/* -----------------------------------------------------------------------------
+ * Hide from both screenreaders and browsers.
+ * ----------------------------------------------------------------------------- */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* -----------------------------------------------------------------------------
+ * Hide only visually, but have it available for screenreaders.
+ * ----------------------------------------------------------------------------- */
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect( 0 0 0 0 );
+  border: 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard.
+ * ----------------------------------------------------------------------------- */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* -----------------------------------------------------------------------------
+ * Hide visually and from screenreaders, but maintain layout.
+ * ----------------------------------------------------------------------------- */
+
+.invisible {
+  visibility: hidden;
+}
+
+/* -----------------------------------------------------------------------------
+ * Text meant only for screen readers.
+ * ----------------------------------------------------------------------------- */
+
+.screen-reader-text {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect( 1px, 1px, 1px, 1px );
+}
+
+.screen-reader-text:focus {
+  display: block;
+  z-index: 100000;
+  top: 4px;
+  left: 4px;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  clip: auto !important;
+  border-radius: 4px;
+  background-color: var( --color-white );
+  box-shadow: 0 0 2px 2px color-mod( var( --color-black ) a( 0.5 ) );
+  color: var( --color-black );
+  font-size: rem( 14px );
+  font-weight: bolder;
+  line-height: lh( 14px, 24px );
+  text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------
+ * Focus Styles
+ * ----------------------------------------------------------------------------- */
+
+*:focus {
+  @mixin outline;
+}
+
+/* -----------------------------------------------------------------------------
+ * Skip Link
+ * ----------------------------------------------------------------------------- */
+.skip-link:focus {
+  border-color: var( --color-torch-red );
+  background-color: var( --color-torch-red );
+  color: var( --color-white );
+}

@@ -1,0 +1,122 @@
+
+/* -----------------------------------------------------------------------------
+ * Text
+ * ----------------------------------------------------------------------------- */
+
+.text-large {
+  font-size: 120%;
+}
+
+.text-small {
+  font-size: 80%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.text-line,
+.text-line-left,
+.text-line-right {
+  display: block;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.text-line {
+  text-align: center;
+}
+
+.text-line-left {
+  text-align: right;
+}
+
+.text-line-right {
+  text-align: left;
+}
+
+.text-line::before,
+.text-line::after,
+.text-line-left::before,
+.text-line-right::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 1px;
+  background-color: currentcolor;
+  vertical-align: middle;
+}
+
+.text-line::before {
+  right: 16px;
+  margin-left: -50%;
+}
+
+.text-line::after {
+  left: 16px;
+  margin-right: -50%;
+}
+
+.text-line-left::before {
+  right: 16px;
+  width: 100%;
+  margin-left: -100%;
+}
+
+.text-line-right::after {
+  left: 16px;
+  width: 100%;
+  margin-right: -100%;
+}

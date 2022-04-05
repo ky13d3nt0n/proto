@@ -1,0 +1,20 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Tables: Responsive
+ *
+ * ----------------------------------------------------------------------------- */
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  min-height: 0%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive table {
+  margin-top: 0;
+  margin-bottom: 0;
+}

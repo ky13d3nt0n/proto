@@ -1,0 +1,70 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Tables: General
+ *
+ * ----------------------------------------------------------------------------- */
+
+table {
+  border-spacing: 0;
+  text-align: left;
+}
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  caption-side: top;
+  font-style: italic;
+  text-align: center;
+}
+
+thead {
+  vertical-align: bottom;
+}
+
+th {
+  font-weight: bolder;
+}
+
+th,
+td {
+  padding: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+/* -----------------------------------------------------------------------------
+ * Table Class
+ * ----------------------------------------------------------------------------- */
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-size: rem( 14px );
+  line-height: lh( 14px, 20px );
+}
+
+.table thead th {
+  padding: 12px 16px 12px;
+  background-color: var( --color-primary );
+  color: var( --color-neutral-light );
+  font-size: rem( 16px );
+  line-height: lh( 16px, 24px );
+}
+
+.table tbody th {
+  padding: 12px 16px 11px;
+  border-bottom: 1px solid var( --color-neutral-light );
+  background-color: var( --color-neutral-light );
+  font-size: rem( 16px );
+  line-height: lh( 16px, 24px );
+}
+
+.table tbody td {
+  padding: 12px 16px 11px;
+  border-bottom: 1px solid var( --color-neutral-light );
+  background-color: var( --color-white );
+}

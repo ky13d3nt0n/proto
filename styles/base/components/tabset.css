@@ -1,0 +1,235 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Components: Tabset
+ *
+ * ----------------------------------------------------------------------------- */
+
+.tabset {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.tabset::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -----------------------------------------------------------------------------
+ * Layout: Tabs
+ * ----------------------------------------------------------------------------- */
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  @media (--medium) {
+    display: table;
+  }
+}
+
+.tab-item {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 0;
+  vertical-align: top;
+}
+
+.tab-item__indicator {
+  display: block;
+  position: absolute;
+  height: 4px;
+  transition: left 225ms cubic-bezier( 0.4, 0, 0.2, 1 ) 0ms, width 225ms cubic-bezier( 0.4, 0, 0.2, 1 ) 0ms;
+  background-color: var( --color-torch-red );
+}
+
+/* -----------------------------------------------------------------------------
+ * Layout: Tab Link
+ * ----------------------------------------------------------------------------- */
+
+.tab-link {
+  display: block;
+  padding: 5px 10px;
+  border: 0;
+  background-color: transparent;
+  color: var( --color-ghost-gray );
+  font-size: rem( 16px );
+  font-weight: 500;
+  line-height: lh( 16px, 24px );
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (--medium) {
+    padding: 11px 15px 12px;
+  }
+
+  span {
+    pointer-events: none;
+  }
+}
+
+.tab-link:hover,
+.tab-link:focus {
+  color: var( --color-torch-red );
+  text-decoration: none;
+}
+
+.tab-link.--active {
+  background-color: var( --color-white );
+  color: var( --color-torch-red );
+}
+
+/* -----------------------------------------------------------------------------
+ * Layout: Tab previous and next
+ * ----------------------------------------------------------------------------- */
+
+.tab-previous,
+.tab-next {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: var( --color-primary );
+  line-height: lh( 16px, 24px );
+  text-align: center;
+  text-decoration: none;
+}
+
+.tab-previous::before,
+.tab-next::after {
+  @mixin icomoon;
+
+  font-size: rem( 16px );
+  letter-spacing: 0;
+}
+
+.tab-previous::before {
+  content: var( --icon-arrow-left2 );
+}
+
+.tab-next::after {
+  content: var( --icon-arrow-right2 );
+}
+
+.tab-previous:hover,
+.tab-previous:focus,
+.tab-next:hover,
+.tab-next:focus {
+  color: var( --color-secondary );
+  text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------
+ * Layout: Tab Toggle
+ * ----------------------------------------------------------------------------- */
+
+.tab-toggle {
+  display: none;
+  position: relative;
+  margin-top: -1px;
+  padding: 12px 47px 11px 15px;
+  border: 2px solid var( --color-ghost-gray );
+  background-color: var( --color-white );
+  color: var( --color-ghost-gray );
+  font-size: rem( 16px );
+  font-weight: 500;
+  line-height: lh( 16px, 24px );
+  text-decoration: none;
+}
+
+.tab-toggle::after {
+  @mixin icomoon;
+
+  content: var( --icon-arrow-right2 );
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: rem( 16px );
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.tab-toggle:hover,
+.tab-toggle:focus {
+  border-color: var( --color-torch-red );
+  background-color: var( --color-torch-red );
+  color: var( --color-white );
+  text-decoration: none;
+}
+
+.tab-toggle:hover::after,
+.tab-toggle:focus::after {
+  color: var( --color-white );
+}
+
+.tab-toggle.--active {
+  border-color: var( --color-torch-red );
+  color: var( --color-midnight-express );
+}
+
+.tab-toggle.--active::after {
+  content: var( --icon-arrow-down2 );
+  color: var( --color-midnight-express );
+}
+
+.tab-toggle.--active:hover,
+.tab-toggle.--active:focus {
+  border-color: var( --color-torch-red );
+  background-color: var( --color-torch-red );
+  color: var( --color-white );
+
+  &::after {
+    color: var( --color-white );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Layout: Tab
+ * ----------------------------------------------------------------------------- */
+
+.tab {
+  display: none;
+  margin-top: -1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var( --color-white );
+}
+
+.tab::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.tab.--active {
+  display: block;
+}
+
+/* -----------------------------------------------------------------------------
+ * Layout: Responsive Tabset
+ * ----------------------------------------------------------------------------- */
+
+@media (--medium-max) {
+  .tabset-responsive {
+    padding-top: 1px;
+  }
+
+  .tabset-responsive .tabs {
+    display: none;
+  }
+
+  .tabset-responsive .tab-toggle {
+    display: block;
+  }
+
+  .tabset-responsive .tab.active {
+    display: block;
+    width: auto;
+  }
+}

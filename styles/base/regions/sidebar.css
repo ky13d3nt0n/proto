@@ -1,0 +1,162 @@
+/* stylelint-disable */
+
+/* -----------------------------------------------------------------------------
+ *
+ * Regions: Sidebar
+ *
+ * ----------------------------------------------------------------------------- */
+
+.site-sidebar {
+}
+
+.sidebar-area {
+}
+
+/* -----------------------------------------------------------------------------
+ * Sidebar Navigation
+ * ----------------------------------------------------------------------------- */
+
+.sidebar-navigation {
+  margin-bottom: 40px;
+
+	&:empty {
+		display: none;
+	}
+}
+
+.sidebar-navigation-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Sidbar Menu
+ * ----------------------------------------------------------------------------- */
+
+.sidebar-menu {
+}
+
+.sidebar-menu > li {
+  font-size: rem( 18px );
+  line-height: lh( 18px, 24px );
+}
+
+.sidebar-menu > li + li {
+  margin-top: -1px;
+  border-top: 1px solid var( --color-neutral-light );
+}
+
+.sidebar-menu > li > a {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+
+	&::before {
+		@mixin icomoon;
+
+		content: var( --icon-chevron-right );
+	  position: absolute;
+	  left: 0;
+	  font-size: rem( 16px );
+	  text-align: left;
+	}
+
+	&:hover,
+	&:focus {
+	}
+}
+
+.sidebar-menu > li:last-child {
+  border-bottom: 1px solid var( --color-neutral-light );
+}
+
+.sidebar-menu > li:last-child > a {
+  margin-bottom: -1px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Sidbar Menu Tier Two
+ * ----------------------------------------------------------------------------- */
+
+.sidebar-menu > li > ul {
+  margin-top: -4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+}
+
+.sidebar-menu > li > ul > li {
+  margin-bottom: 8px;
+  font-size: rem( 16px );
+  line-height: lh( 16px, 24px );
+}
+
+.sidebar-menu > li > ul > li > a {
+	&:hover,
+	&:focus {
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Sidebar Menu Tier Three
+ * ----------------------------------------------------------------------------- */
+
+.sidebar-menu > li > ul > li > ul {
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.sidebar-menu > li > ul > li > ul > li {
+  font-size: rem( 14px );
+  line-height: lh( 14px, 20px );
+}
+
+.sidebar-menu > li > ul > li > ul > li > a {
+	&:hover,
+	&:focus {
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Archive Navigation
+ * ----------------------------------------------------------------------------- */
+
+.archives-navigation {
+  margin-bottom: 40px;
+}
+
+.archives-navigation-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: rem( 16px );
+  line-height: lh( 16px, 24px );
+}
+
+/* -----------------------------------------------------------------------------
+ * Archive Menu
+ * ----------------------------------------------------------------------------- */
+
+.archives-menu {
+  margin-bottom: 24px;
+}
+
+.archives-menu > li {
+  width: 50%;
+  float: left;
+  font-size: rem( 14px );
+  line-height: lh( 14px, 24px );
+}
+
+.archives-menu > li > a {
+	&:hover,
+	&:focus {
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Archive Dropdown
+ * ----------------------------------------------------------------------------- */
+
+.archives-dropdown {
+}

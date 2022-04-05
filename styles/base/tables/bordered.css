@@ -1,0 +1,86 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Tables: Bordered
+ *
+ * ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+ * THEAD TH
+ * ----------------------------------------------------------------------------- */
+
+.table-bordered thead th {
+  padding-left: 15px;
+  border-left: 1px solid var( --color-neutral-light );
+
+  &:first-child {
+    padding-left: 15px;
+    border-left: 1px solid var( --color-primary );
+  }
+
+  &:last-child {
+    padding-right: 15px;
+    border-right: 1px solid var( --color-primary );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * TBODY TH
+ * ----------------------------------------------------------------------------- */
+
+.table-bordered tbody th {
+  padding-left: 15px;
+  border-left: 1px solid var( --color-neutral-light );
+
+  &:first-child {
+    padding-left: 15px;
+    border-left: 1px solid var( --color-neutral-light );
+  }
+
+  &:last-child {
+    padding-right: 15px;
+    border-right: 1px solid var( --color-neutral-light );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * TBODY TD
+ * ----------------------------------------------------------------------------- */
+
+.table-bordered tbody td {
+  padding-left: 15px;
+  border-left: 1px solid var( --color-neutral-light );
+
+  &:first-child {
+    padding-left: 15px;
+    border-left: 1px solid var( --color-neutral-light );
+  }
+
+  &:last-child {
+    padding-right: 15px;
+    border-right: 1px solid var( --color-neutral-light );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * TBODY TR:FIRST-CHILD
+ * ----------------------------------------------------------------------------- */
+
+.table-bordered tbody tr:first-child {
+  th,
+  td {
+    padding-top: 11px;
+    border-top: 1px solid var( --color-neutral-light );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * THEAD + TBODY TR:FIRST-CHILD
+ * ----------------------------------------------------------------------------- */
+
+.table-bordered thead + tbody tr:first-child {
+  th,
+  td {
+    padding-top: 12px;
+    border-top: 0;
+  }
+}

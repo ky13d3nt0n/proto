@@ -1,0 +1,20 @@
+/* -----------------------------------------------------------------------------
+ * Menus
+ * ----------------------------------------------------------------------------- */
+
+.menu,
+.menu > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.menu a {
+  color: var( --color-black-rock );
+}

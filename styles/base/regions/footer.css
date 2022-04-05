@@ -1,0 +1,357 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Regions: Footer
+ *
+ * ----------------------------------------------------------------------------- */
+
+.site-footer {
+  visibility: hidden;
+  margin-top: 100px;
+
+  @media (--large) {
+    margin-top: 150px;
+  }
+}
+
+[ data-harbinger-ready='true' ] .site-footer {
+  visibility: visible;
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Footer Primary
+ * ----------------------------------------------------------------------------- */
+
+.site-footer-primary {
+  @media (--large) {
+    width: 100%;
+    max-width: var( --grid-width );
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var( --grid-gutter );
+    padding-left: var( --grid-gutter );
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Footer Navigation
+ * ----------------------------------------------------------------------------- */
+
+.footer-navigation {
+}
+
+.footer-navigation-title {
+}
+
+/* -----------------------------------------------------------------------------
+ * Footer Menu Primary
+ * ----------------------------------------------------------------------------- */
+
+.footer-menu-primary {
+}
+
+.footer-menu-primary .accordion {
+
+  @media (--large) {
+    display: flex;
+    width: 100%;
+  }
+
+  & *::before,
+  & *::after {
+    @media (--large) {
+      content: none;
+    }
+  }
+}
+
+.footer-menu-primary .accordion .accordion-item {
+
+  @media (--large) {
+    width: calc( 100% / 6 );
+  }
+
+  &::before {
+
+    @media (--large) {
+      content: none;
+    }
+  }
+}
+
+.footer-menu-primary .accordion .accordion-item:last-of-type {
+
+  @media (--large) {
+    margin: 0;
+  }
+
+  &::after {
+    @media (--large) {
+      content: none;
+    }
+  }
+}
+
+.footer-menu-primary .accordion-item.--active .accordion-title {
+  &::after {
+    @media (--large) {
+      content: none;
+    }
+  }
+}
+
+.footer-menu-primary .accordion-item.--active .accordion-content {
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  @media (--large) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.footer-menu-primary .accordion-header {
+  @mixin mobile-container;
+
+  cursor: pointer;
+
+  @media (--large) {
+    max-width: none;
+    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
+    cursor: default;
+    appearance: none;
+  }
+}
+
+.footer-menu-primary .accordion-title {
+  color: var( --color-midnight-express );
+  font-size: rem( 18px );
+  font-weight: 500;
+  line-height: lh( 18px, 22px );
+
+  @media (--large) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-menu-primary .accordion-content {
+  @mixin mobile-container;
+
+  overflow: hidden;
+
+  @media (--large) {
+    display: block;
+    max-height: 100% !important;
+    margin-right: 50px;
+    opacity: 1 !important;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Handles footer links inside of mobile mastfoot accordion:
+ * accordion-content container would 'hide' when accordion item was closed, but
+ * the contents inside would not. this caused links to overlay each other.
+ * ----------------------------------------------------------------------------- */
+
+.footer-menu-primary .accordion .accordion-item:last-of-type .accordion-content {
+
+  @media (--large) {
+    margin-right: 0;
+  }
+}
+
+.footer-menu-primary li {
+  font-size: rem( 14px );
+  font-weight: 500;
+  line-height: lh( 14px, 14px );
+}
+
+.footer-menu-primary .menu > li > a {
+  display: block;
+  padding: 10px 0;
+  font-size: rem( 14px );
+  line-height: 1;
+  pointer-events: auto;
+
+  @media (--large) {
+    padding: 5px 0;
+  }
+
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Footer Secondary
+ * ----------------------------------------------------------------------------- */
+
+.site-footer-secondary {
+  @mixin mobile-container;
+}
+
+.site-footer-secondary .social {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  @media (--hd) {
+    margin-top: 0;
+    float: right;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Footer Menu - Secondary
+ * ----------------------------------------------------------------------------- */
+
+.footer-menu-secondary {
+  @media (--hd) {
+    float: left;
+  }
+}
+
+.footer-menu-secondary ul {
+
+}
+
+.footer-menu-secondary li {
+  display: inline-block;
+  width: 50%;
+  font-size: rem( 12px );
+
+  @media (--medium) {
+    width: auto;
+    margin-right: 25px;
+  }
+}
+
+.footer-menu-secondary li > a {
+  display: block;
+  padding: 10px 10px 10px 0;
+  font-weight: 500;
+}
+
+/* -----------------------------------------------------------------------------
+ * Footer Contact
+ * ----------------------------------------------------------------------------- */
+
+.footer-contact {
+}
+
+.footer-contact-title {
+}
+
+/* -----------------------------------------------------------------------------
+ * vCard
+ * ----------------------------------------------------------------------------- */
+
+.footer-contact .vcard {
+  margin-bottom: 0;
+}
+
+.footer-contact .org {
+}
+
+.footer-contact .adr {
+}
+
+.footer-contact .street-address {
+}
+
+.footer-contact .extended-address {
+}
+
+.footer-contact .locality {
+}
+
+.footer-contact .region {
+}
+
+.footer-contact .postal-code {
+}
+
+.footer-contact .country-name {
+}
+
+.footer-contact .tel {
+}
+
+.footer-contact .tel .type {
+}
+
+.footer-contact .tel .value {
+}
+
+.footer-contact .website {
+}
+
+.footer-contact .url {
+  &:hover,
+  &:focus {
+  }
+}
+
+.footer-contact .email-address {
+}
+
+.footer-contact .email {
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Credit
+ * ----------------------------------------------------------------------------- */
+
+.site-credit {
+  margin-bottom: 0;
+}
+
+.site-credit a {
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Copyright
+ * ----------------------------------------------------------------------------- */
+
+.site-copyright {
+  color: var( --color-midnight-express );
+}
+
+.site-copyright a {
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Site Back to Top
+ * ----------------------------------------------------------------------------- */
+
+.site-back-to-top {
+  position: fixed;
+  z-index: -1;
+  right: 8px;
+  bottom: 8px;
+  width: 48px;
+  height: 48px;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  background-color: var( --color-black );
+  background-color: color-mod( var( --color-black ) a( 0.2 ) );
+  text-indent: -9999px;
+
+  &::before {
+    content: '';
+  }
+
+  &.active {
+    z-index: 1;
+    opacity: 1;
+  }
+}

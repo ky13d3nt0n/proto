@@ -1,0 +1,110 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Components: Pullquotes
+ *
+ * ----------------------------------------------------------------------------- */
+
+.pullquote {
+  position: relative;
+  margin-top: 28px;
+  margin-bottom: 28px;
+
+  @media (--small) {
+    padding-left: 64px;
+  }
+
+  @media (--small-max) {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  &.alignleft,
+  &.alignright,
+  &.aligncenter {
+    width: calc( 50% - 16px );
+
+    @media (--small-max) {
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+      float: none;
+    }
+  }
+
+  &.alignleft {
+    margin-right: 32px;
+    float: left;
+  }
+
+  &.alignright {
+    margin-left: 32px;
+    float: right;
+  }
+
+  &.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Pullquote Content
+ * ----------------------------------------------------------------------------- */
+
+.pullquote-content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: rem( 18px );
+  font-style: italic;
+  line-height: lh( 18px, 28px );
+
+  @media (--large) {
+    font-size: rem( 20px );
+  }
+
+  &::before {
+    @mixin icomoon;
+
+    content: var( --icon-quotes-left );
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    float: left;
+    border-radius: 50%;
+    background-color: var( --color-primary );
+    color: var( --color-white );
+    font-size: rem( 24px );
+    line-height: lh( 24px, 48px );
+    text-align: center;
+    vertical-align: top;
+
+    @media (--small) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Pullquote Caption
+ * ----------------------------------------------------------------------------- */
+
+.pullquote-caption {
+  margin-top: 12px;
+  font-weight: bolder;
+}
+
+/* -----------------------------------------------------------------------------
+ * Pullquote Source
+ * ----------------------------------------------------------------------------- */
+
+.pullquote-source {
+  color: var( --color-primary );
+  font-style: normal;
+}

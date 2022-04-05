@@ -1,0 +1,21 @@
+/* -----------------------------------------------------------------------------
+ *
+ * List: Definition
+ *
+ * ----------------------------------------------------------------------------- */
+
+.list-definition {
+  dl&,
+  & > dl {
+    & > dt {
+      font-weight: bolder;
+    }
+
+    & > dd {
+      margin-bottom: 16px;
+      margin-left: 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var( --color-neutral-light );
+    }
+  }
+}

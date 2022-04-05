@@ -1,0 +1,96 @@
+
+/* -----------------------------------------------------------------------------
+ *
+ * Layout: Weighted
+ *
+ * Usage: Loop (results + sidebar, etc.)
+ *
+ * Example:
+ * <div class="l-weighted-right">
+ *   <div>
+ *     ...
+ *   </div>
+  *  <div>
+ *     ...
+ *   </div>
+ * </div>
+ *
+ * ----------------------------------------------------------------------------- */
+
+.l-weighted-right,
+.l-weighted-left {
+  padding-right: var( --grid-gutter-half );
+  padding-left: var( --grid-gutter-half );
+
+  @media (--large) {
+    display: flex;
+  }
+
+  & > * {
+    padding-right: var( --grid-gutter-half );
+    padding-left: var( --grid-gutter-half );
+  }
+}
+
+/* Layout: Weighted Right */
+
+.l-weighted-right {
+  @media (--large) {
+    display: flex;
+  }
+
+  & > *:first-child {
+    @media (--large) {
+      width: calc( 30% - ( var( --grid-gutter ) - ( var( --grid-gutter ) / 2 ) ) );
+    }
+  }
+
+  & > *:last-child {
+    margin-top: var( --spacer );
+
+    @media (--large) {
+      width: calc( 70% - ( var( --grid-gutter ) - ( var( --grid-gutter ) / 2 ) ) );
+      margin-top: 0;
+      margin-left: var( --grid-gutter );
+    }
+  }
+}
+
+/* Layout: Weighted Left */
+
+.l-weighted-left {
+  @media (--large) {
+    display: flex;
+  }
+
+  & > *:first-child {
+    @media (--large) {
+      width: calc( 70% - ( var( --grid-gutter ) - ( var( --grid-gutter ) / 2 ) ) );
+    }
+  }
+
+  & > *:last-child {
+    margin-top: var( --spacer );
+
+    @media (--large) {
+      width: calc( 30% - ( var( --grid-gutter ) - ( var( --grid-gutter ) / 2 ) ) );
+      margin-top: 0;
+      margin-left: var( --grid-gutter );
+    }
+  }
+}
+
+.l-weighted-left--single-col {
+  padding-right: var( --grid-gutter-half );
+  padding-left: var( --grid-gutter-half );
+
+  @media (--large) {
+    display: flex;
+  }
+
+  & > *:first-child {
+    @media (--large) {
+      width: calc( 70% - ( var( --grid-gutter ) - ( var( --grid-gutter ) / 2 ) ) );
+    }
+  }
+}

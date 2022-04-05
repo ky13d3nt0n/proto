@@ -1,0 +1,229 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Regions: Comments
+ *
+ * ----------------------------------------------------------------------------- */
+
+.comments-area {
+}
+
+.comments-title {
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment List
+ * ----------------------------------------------------------------------------- */
+
+.comment-list,
+.comment-list .children {
+  list-style: none;
+}
+
+.comment-list,
+.comment-list > li,
+.comment-list .children,
+.comment-list .children > li {
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list {
+}
+
+.comment-list .comment {
+}
+
+.comment-list .children {
+  padding-left: 32px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Body
+ * ----------------------------------------------------------------------------- */
+
+.comment-body {
+  position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid var( --color-primary );
+
+  @media (--large) {
+    margin-left: 64px;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Meta
+ * ----------------------------------------------------------------------------- */
+
+.comment-meta {
+  @mixin clearfix;
+
+  margin-bottom: 12px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Author
+ * ----------------------------------------------------------------------------- */
+
+.comment-author {
+}
+
+.comment-author .avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  float: left;
+
+  @media (--large) {
+    margin-right: 0;
+    margin-left: -64px;
+  }
+}
+
+.comment-author .fn {
+}
+
+.comment-author .url {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Metadata
+ * ----------------------------------------------------------------------------- */
+
+.comment-metadata {
+  @mixin clearfix;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Content
+ * ----------------------------------------------------------------------------- */
+
+.comment-content {
+  clear: both;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Awaiting Moderation
+ * ----------------------------------------------------------------------------- */
+
+.comment-awaiting-moderation {
+  margin: 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Reply
+ * ----------------------------------------------------------------------------- */
+
+.comment-reply {
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Reply Link
+ * ----------------------------------------------------------------------------- */
+
+.comment-reply-link {
+  font-weight: bolder;
+  text-decoration: none;
+
+  &::before {
+    @mixin icomoon;
+
+    content: '\e96a';
+    margin-right: 8px;
+  }
+
+  &:hover,
+  &:focus {
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Respond
+ * ----------------------------------------------------------------------------- */
+
+.comment-respond {
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Reply Title
+ * ----------------------------------------------------------------------------- */
+
+.comment-reply-title {
+}
+
+/* -----------------------------------------------------------------------------
+ * Cancel Comment Reply Link
+ * ----------------------------------------------------------------------------- */
+
+.cancel-comment-reply-link {
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Notes
+ * ----------------------------------------------------------------------------- */
+
+.comment-notes {
+  display: none;
+}
+
+/* -----------------------------------------------------------------------------
+ * Comment Form
+ * ----------------------------------------------------------------------------- */
+
+.comment-form {
+  line-height: 24px;
+}
+
+.comment-form label {
+  vertical-align: top;
+}
+
+.comment-form textarea {
+  height: 200px;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment {
+  margin-bottom: 12px;
+}
+
+.comment-form-submit {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    width: 50%;
+    height: 1px;
+    background-color: var( --color-primary );
+    vertical-align: middle;
+  }
+
+  &::before {
+    right: 0;
+    margin-left: -50%;
+  }
+
+  &::after {
+    left: 0;
+    margin-right: -50%;
+  }
+}
+
+.comment-form-allowed-tags {
+  display: none;
+}
